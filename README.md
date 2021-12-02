@@ -1,5 +1,5 @@
 #### Deployment: <a href="">Github Pages</a>
-#### Frontend: <a href="">Repository</a>
+#### Frontend: <a href="https://github.com/Sergius92739/ahj-12.1-workers_loading_styling_frontend">Repository</a>
 #### Server: <a href="https://ahj-workers-loading-styling.herokuapp.com/">Heroku</a>
 
 ---
