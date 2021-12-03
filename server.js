@@ -10,17 +10,24 @@ app.use(slow({
   delay: 5000
 }));
 
-const port = process.env.PORT || 7070;
-
 app.use(koaBody({
   text: true,
   urlencoded: true,
   multipart: true,
   json: true,
 }));
-app.use(cors());
+
+app.use(cors({
+  origin: '*',
+  credentials: true,
+  'Access-Control-Allow-Origin': true,
+  allowMethods: ['GET'],
+}));
+
 app.use(router());
 
+const port = process.env.PORT || 7070;
 const server = http.createServer(app.callback());
+
 server.listen(port);
 console.log(`The server started on port ${port}`);
