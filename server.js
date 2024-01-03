@@ -26,7 +26,7 @@ app.use(cors({
 
 app.use(router());
 
-const port = process.env.PORT || 8086;
+const port = process.env.PORT || 8000;
 const server = http.createServer(app.callback());
 
 server.listen(port);
